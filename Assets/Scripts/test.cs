@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.VFX;
 using UnityEngine;
+
 
 public class test : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class test : MonoBehaviour
 
     public Rigidbody rb;
     public Vector3 rot;
+    public VisualEffect boostvfx;
+    public float boostvfyspeed;
+
     void Start()
     {
         
@@ -16,6 +21,7 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        boostvfx.SetFloat("ParticleRate", rot.magnitude* boostvfyspeed);
         rb.transform.Rotate(rot);
     }
 }
