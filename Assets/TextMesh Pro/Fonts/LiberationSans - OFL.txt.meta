@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 6e59c59b81ab47f9b6ec5781fa725d2c
 timeCreated: 1484171296
+<<<<<<< Updated upstream
 licenseType: Store
+=======
+licenseType: Pro
+>>>>>>> Stashed changes
 TextScriptImporter:
   userData: 
   assetBundleName: 
